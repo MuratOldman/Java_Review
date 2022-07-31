@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Java_Review" />
+        <module name="Generics" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="generics" target="11" />
+      <module name="oop-review" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
