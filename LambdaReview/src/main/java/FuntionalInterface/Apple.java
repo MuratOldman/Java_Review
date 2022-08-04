@@ -1,3 +1,5 @@
+package FuntionalInterface;
+
 public class Apple {
     private int weight;
     private Color color;
@@ -26,7 +28,7 @@ public class Apple {
 
     @Override
     public String toString() {
-        return "Apple{" +
+        return "FuntionalInterface.Apple{" +
                 "weight=" + weight +
                 ", color=" + color +
                 '}';

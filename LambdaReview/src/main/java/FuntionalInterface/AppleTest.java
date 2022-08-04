@@ -1,3 +1,5 @@
+package FuntionalInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,3 +1,5 @@
+package FuntionalInterface;
+
 public class AppleHeavyPredicate implements ApplePredicate{
     @Override
     public boolean test(Apple apple) {
