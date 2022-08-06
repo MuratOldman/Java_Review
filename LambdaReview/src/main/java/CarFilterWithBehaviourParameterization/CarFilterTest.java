@@ -27,6 +27,18 @@ public class CarFilterTest {
         List<Car> durableCars = filter(carList, new DurableCarPredicate());
         System.out.println("durableCars = " + durableCars);
 
+        // when we use lambda we don't need any implement predicate classes. We don't need any more DurableCarPredicate.java , FastCarPredicate.java , NewCarPredicate.java
+        CarFilter newCarFilter=c->c.getYear()>2015;
+        List<Car> newCarsWithLambda = filter(carList, newCarFilter);
+        System.out.println("newCarsWithLambda = " + newCarsWithLambda);
+
+        List<Car> fasterCarsWithLambda = filter(carList, c -> c.getTopSpeed() > 160);
+        System.out.println("fasterCarsWithLambda = " + fasterCarsWithLambda);
+
+        List<Car> durableCarsWithLambda = filter(carList, c -> c.getMake().equals("Toyota"));
+        System.out.println("durableCarsWithLambda = " + durableCarsWithLambda);
+
+
     }
 
     private static List<Car> filter(List<Car>list,CarFilter carFilter){
