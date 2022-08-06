@@ -7,7 +7,6 @@ import java.util.function.Predicate;
 
 public class VoteEligibilityTest {
     public static void main(String[] args) {
-   
 
         List<Human>humans=new ArrayList<>();
 
