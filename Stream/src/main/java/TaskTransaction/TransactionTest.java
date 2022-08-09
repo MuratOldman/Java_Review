@@ -56,10 +56,10 @@ public class TransactionTest {
 
         //7 - What is the highest value of all the transactions
         System.out.println("******Task-7************");
-        Optional<Integer> naxValue = TransactionData.getAll().stream()
+        Optional<Integer> maxValue = TransactionData.getAll().stream()
                 .map(Transaction::getValue)
                 .reduce(Integer::max);
-        System.out.println("naxValue.get() = " + naxValue.get());
+        System.out.println("naxValue.get() = " + maxValue.get());
 
         //8-Find the transaction with the smallest value
         System.out.println("******Task-8************");
