@@ -27,7 +27,5 @@ public class LambdaExamples {
         System.out.println("========SUPPLIER===========");
         Supplier<Double>randomValue= Math::random;
         System.out.println("randomValue.get() = " + randomValue.get());
-
-
     }
 }
